@@ -1,0 +1,238 @@
+@font-face{
+	font-family: 'Schoon';
+	src: url("../fonts/font4.ttf");
+}
+
+@font-face{
+	font-family: 'Typical Writer';
+	src: url("../fonts/font5.ttf");
+}
+
+body, html{
+	font-family: 'Typical Writer', serif;
+}
+
+h1, h2, h3{
+	font-weight: normal;
+}
+
+header{
+	background-color: #465031;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	z-index: 1000;
+	box-shadow: 2px 0px 5px black;
+	float: left;
+}
+
+header h1{
+	position: relative;
+	font-size: 35pt;
+	top: 15px;
+	left: 2%;
+	display: inline;
+	z-index: 1001;
+	font-weight: normal;
+}
+
+header h1 a{
+	color: white;
+	text-decoration: none;
+	font-family: 'Schoon', sans-serif;
+}
+
+header nav#menu{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+header nav#menu ul{
+	list-style: none;
+	position: relative;
+	width: 100%;
+	right: 2%;
+	top: 20px;
+	text-align: right;
+}
+
+header nav#menu ul li{
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+header nav#menu ul li a{
+	font-size: 18pt;
+	color: #A2B72A;
+	text-decoration: none;
+}
+
+header nav#menu ul li a.active{
+	font-size: 18pt;
+	color: white;
+	text-decoration: none;
+}
+
+header nav#menu ul li a:hover:not(.active){
+	color: black;
+}
+
+img#fundo1{
+	position: fixed;
+	left: 0;
+	width: 100%;
+}
+
+img#fundo2{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 1250px;
+}
+
+section{
+	position: absolute;
+	left: 0;
+	height: 400px;
+	width: 100%;
+	text-shadow: 1px 1px 2px black;
+}
+
+section h2{
+	text-align: center;
+	color: white;
+}
+
+section h1{
+	color: #A2B72A;
+	text-align: center;
+	font-size: 30pt;
+}
+
+section h3{
+	color: white;
+	font-weight: normal;
+	display: inline;
+	font-size: 16pt;
+}
+
+section#pri{
+	display: inline-block;
+	top: 100px;
+}
+
+section#pri h2#prev, section#pri h2#next{
+	position: absolute;
+	display: inline-block;
+}
+
+section#pri h2#prev{
+	left: 100px;
+	top: 20px;
+}
+
+section#pri h2#next{
+	right: 100px;
+	top: 20px;
+}
+
+section#pri h2 a{
+	text-decoration: none;
+	color: white;
+}
+
+section#pri h2 a:hover{
+	color: #A2B72A;
+}
+
+section#pri ol{
+	list-style-position: inside;
+	text-align: center;
+	color: #A2B72A;
+}
+
+section#pri ol div{
+	display: inline-block;
+	height: 600px;
+	width: 300px;
+	margin: 5px;
+	left: calc((100% - 1300px)/2);
+	position: relative;
+	float: left;
+}
+
+section#seg{
+	display: inline-block;
+	top: 700px;
+	height: 300px;
+}
+
+section#seg div iframe{
+	box-shadow: 2px 2px 5px black;
+	border: 4px double black;
+}
+
+div#faixa{
+	background-color: #465031;
+	position: absolute;
+	top: 1200px;
+	height: 50px;
+	width: 100%;
+	left: 0;
+}
+
+footer#rodape div{
+	position: absolute;
+	background-color: #465031;
+	width: 100%;
+	height: 400px;
+	left: 0;
+	top: 1420px;
+}
+
+footer#rodape div table{
+	width: 100%;
+}
+
+footer#rodape div table tr#principais{
+	width: 15%;
+}
+
+footer#rodape div table tr#principais th{
+	text-align: center;
+	font-size: 18pt;
+	padding-top: 20px;
+}
+
+footer#rodape div table tr th a{
+	color: #A2B72A;
+	text-decoration: none;
+}
+
+footer#rodape div tr th a:hover{
+	color: white;
+}
+
+footer#rodape div tr td{
+	font-size: 14pt;
+	text-align: center;
+	width: 15%;
+	padding-top: 20px;
+}
+
+footer#rodape div table tr td a{
+	color: white;
+	text-decoration: none;
+}
+
+footer#rodape div tr td a:hover{
+	color: #A2B72A;
+}
+
+footer#rodape div tr td a.active{
+	color: #A2B72A;
+}

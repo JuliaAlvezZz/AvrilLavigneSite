@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+img#fundo3{
+	top: 1150px;
+}
+
+section#ter{
+	top: 150px;
+	position: absolute;
+	height: 900px;
+}
+
+section#ter pre{
+	font-family: 'Cinzel', serif;
+	color: #B8D9D3;
+	text-align: center;
+	height: 100%;
+}
+
+div#faixa{
+	top: 1150px;
+}
+
+footer#rodape div{
+	top: 1320px;
+}

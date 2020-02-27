@@ -1,0 +1,235 @@
+@font-face{
+	font-family: 'Polaroid 22';
+	src: url("../fonts/font2.ttf");
+}
+
+body, html{
+	font-family: 'Polaroid 22', sans-serif;
+}
+
+h1, h2, h3{
+	font-weight: normal;
+}
+
+header{
+	background-color: #141412;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	z-index: 1000;
+	box-shadow: 2px 0px 5px black;
+	float: left;
+}
+
+header h1{
+	position: relative;
+	font-size: 35pt;
+	top: 15px;
+	left: 2%;
+	display: inline;
+	z-index: 1001;
+	font-weight: normal;
+}
+
+header h1 a{
+	color: #FDFDFD;
+	text-decoration: none;
+}
+
+header nav#menu{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+header nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: relative;
+	width: 100%;
+	right: 2%;
+	top: 20px;
+	text-align: right;
+}
+
+header nav#menu ul li{
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+header nav#menu ul li a{
+	font-size: 18pt;
+	color: #E2240A;
+	text-decoration: none;
+}
+
+header nav#menu ul li a.active{
+	font-size: 18pt;
+	color: #FDFDFD;
+	text-decoration: none;
+}
+
+header nav#menu ul li a:hover:not(.active){
+	color: #FDFDFD;
+}
+
+img#fundo1{
+	position: fixed;
+	left: 0;
+	width: 100%;
+}
+
+img#fundo2{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 1150px;
+}
+
+section{
+	position: absolute;
+	left: 0;
+	height: 400px;
+	width: 100%;
+}
+
+section h2{
+	text-align: center;
+	color: #141412;
+}
+
+section h1{
+	color: #E2240A;
+	text-align: center;
+	font-size: 30pt;
+}
+
+section h3{
+	color: #141412;
+	font-weight: normal;
+	display: inline;
+	font-size: 16pt;
+}
+
+section#pri{
+	display: inline-block;
+	top: 100px;
+}
+
+section#pri h2#prev, section#pri h2#next{
+	position: absolute;
+	display: inline-block;
+}
+
+section#pri h2#prev{
+	left: 100px;
+	top: 20px;
+}
+
+section#pri h2#next{
+	right: 100px;
+	top: 20px;
+}
+
+section#pri h2 a{
+	text-decoration: none;
+	color: #141412;
+}
+
+section#pri h2 a:hover{
+	color: #E2240A;
+}
+
+section#pri ol{
+	list-style-position: inside;
+	text-align: center;
+}
+
+section#pri ol li{
+	margin-bottom: 20px;
+}
+
+section#pri div{
+	display: inline-block;
+	height: 600px;
+	width: 400px;
+	margin: 5px;
+	left: calc((100% - 1300px)/2);
+	position: relative;
+	float: left;
+}
+
+section#seg{
+	display: inline-block;
+	top: 700px;
+	height: 300px;
+}
+
+section#seg div iframe{
+	box-shadow: 2px 2px 5px black;
+	border: 4px double black;
+}
+
+div#faixa{
+	background-color: #141412;
+	position: absolute;
+	top: 1100px;
+	height: 50px;
+	width: 100%;
+	left: 0;
+}
+
+footer#rodape div{
+	position: absolute;
+	background-color: #141412;
+	width: 100%;
+	height: 400px;
+	left: 0;
+	top: 1320px;
+}
+
+footer#rodape div table{
+	width: 100%;
+}
+
+footer#rodape div table tr#principais{
+	width: 15%;
+}
+
+footer#rodape div table tr#principais th{
+	font-size: 18pt;
+	text-align: center;
+	padding-top: 20px;
+}
+
+footer#rodape div table tr th a{
+	color: #E2240A;
+	text-decoration: none;
+}
+
+footer#rodape div tr th a:hover{
+	color: #FDFDFD;
+}
+
+footer#rodape div tr td{
+	font-size: 14pt;
+	text-align: center;
+	width: 15%;
+	padding-top: 20px;
+}
+
+footer#rodape div table tr td a{
+	color: #FDFDFF;
+	text-decoration: none;
+}
+
+footer#rodape div tr td a:hover{
+	color: #E2240A;
+}
+
+footer#rodape div tr td a.active{
+	color: #E2240A;
+}

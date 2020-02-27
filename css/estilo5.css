@@ -1,0 +1,237 @@
+@font-face{
+	font-family: 'Stencil AGG Light';
+	src: url("../fonts/font6.otf");
+}
+
+body, html{
+	font-family: 'Stencil AGG Light', sans-serif;
+	text-transform: uppercase;
+}
+
+h1, h2, h3{
+	font-weight: normal;
+}
+
+header{
+	background-color: #070707;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	z-index: 1000;
+	box-shadow: 2px 0px 5px black;
+	float: left;
+}
+
+header h1{
+	position: relative;
+	font-size: 35pt;
+	top: 15px;
+	left: 2%;
+	display: inline;
+	z-index: 1001;
+	font-weight: normal;
+}
+
+header h1 a{
+	color: white;
+	text-decoration: none;
+}
+
+header nav#menu{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+header nav#menu ul{
+	list-style: none;
+	position: relative;
+	width: 100%;
+	right: 2%;
+	top: 20px;
+	text-align: right;
+}
+
+header nav#menu ul li{
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+header nav#menu ul li a{
+	font-size: 18pt;
+	color: white;
+	text-decoration: none;
+}
+
+header nav#menu ul li a.active{
+	font-size: 18pt;
+	color: #021274;
+	text-decoration: none;
+}
+
+header nav#menu ul li a:hover:not(.active){
+	color: #021274;
+}
+
+img#fundo1{
+	position: fixed;
+	left: 0;
+	width: 100%;
+}
+
+img#fundo2{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 1150px;
+}
+
+section{
+	position: absolute;
+	left: 0;
+	height: 400px;
+	width: 100%;
+	text-shadow: 1px 1px 2px black;
+}
+
+section h2{
+	text-align: center;
+	color: white;
+}
+
+section h1{
+	color: white;
+	text-align: center;
+	font-size: 30pt;
+}
+
+section h3{
+	color: white;
+	font-weight: normal;
+	display: inline;
+	font-size: 16pt;
+}
+
+section#pri{
+	display: inline-block;
+	top: 100px;
+}
+
+section#pri h2#prev, section#pri h2#next{
+	position: absolute;
+	display: inline-block;
+}
+
+section#pri h2#prev{
+	left: 100px;
+	top: 20px;
+}
+
+section#pri h2#next{
+	right: 100px;
+	top: 20px;
+}
+
+section#pri h2 a{
+	text-decoration: none;
+	color: white;
+}
+
+section#pri h2 a:hover{
+	color: #021274;
+}
+
+section#pri ol{
+	list-style-position: inside;
+	text-align: center;
+	color: white;
+}
+
+section#pri ol div{
+	display: inline-block;
+	height: 600px;
+	width: 300px;
+	margin: 5px;
+	left: calc((100% - 1300px)/2);
+	position: relative;
+	float: left;
+}
+
+section#pri ol div h3{
+	font-size: 14pt;
+}
+
+section#seg{
+	display: inline-block;
+	top: 700px;
+	height: 300px;
+}
+
+section#seg div iframe{
+	box-shadow: 2px 2px 5px black;
+	border: 4px double black;
+}
+
+div#faixa{
+	background-color: #070707;
+	position: absolute;
+	top: 1100px;
+	height: 50px;
+	width: 100%;
+	left: 0;
+}
+
+footer#rodape div{
+	position: absolute;
+	background-color: #070707;
+	width: 100%;
+	height: 400px;
+	left: 0;
+	top: 1320px;
+}
+
+footer#rodape div table{
+	width: 100%;
+}
+
+footer#rodape div table tr#principais{
+	width: 15%;
+}
+
+footer#rodape div table tr#principais th{
+	text-align: center;
+	padding-top: 20px;
+}
+
+footer#rodape div table tr th a{
+	font-size: 18pt;
+	color: white;
+	text-decoration: none;
+}
+
+footer#rodape div tr th a:hover{
+	color: #021274;
+}
+
+footer#rodape div tr td{
+	text-align: center;
+	width: 15%;
+	padding-top: 20px;
+	font-size: 14pt;
+}
+
+footer#rodape div table tr td a{
+	color: #021274;
+	text-decoration: none;
+}
+
+footer#rodape div tr td a:hover{
+	color: white;
+}
+
+footer#rodape div tr td a.active{
+	color: white;
+}

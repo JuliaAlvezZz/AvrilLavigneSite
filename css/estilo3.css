@@ -1,0 +1,248 @@
+@font-face{
+	font-family: 'RansomNote';
+	src: url("../fonts/font3.ttf");
+}
+
+body, html{
+	font-family: 'Times New Roman', serif;
+}
+
+h1, h2, h3{
+	font-weight: normal;
+	text-transform: lowercase;
+}
+
+header{
+	background-color: #D74983;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	z-index: 1000;
+	box-shadow: 2px 0px 5px black;
+	float: left;
+}
+
+header h1{
+	position: relative;
+	font-size: 35pt;
+	top: 15px;
+	left: 2%;
+	display: inline;
+	z-index: 1001;
+	font-weight: normal;
+}
+
+header h1 a{
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header nav#menu{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+header nav#menu ul{
+	list-style: none;
+	position: relative;
+	width: 100%;
+	right: 2%;
+	top: 20px;
+	text-align: right;
+}
+
+header nav#menu ul li{
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+header nav#menu ul li a{
+	font-size: 18pt;
+	font-family: 'RansomNote', sans-serif;
+	color: white;
+	text-decoration: none;
+}
+
+header nav#menu ul li a.active{
+	font-size: 18pt;
+	color: black;
+	text-decoration: none;
+}
+
+header nav#menu ul li a:hover:not(.active){
+	color: black;
+}
+
+img#fundo1{
+	position: fixed;
+	left: 0;
+	width: 100%;
+}
+
+img#fundo2{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 1150px;
+}
+
+section{
+	position: absolute;
+	left: 0;
+	height: 400px;
+	width: 100%;
+}
+
+section h2{
+	text-align: center;
+	color: #D74983;
+}
+
+section h1{
+	color: #141519;
+	text-align: center;
+	font-size: 30pt;
+}
+
+section h3{
+	color: #D74983;
+	font-weight: normal;
+	display: inline;
+	font-size: 16pt;
+}
+
+section#pri{
+	display: inline-block;
+	top: 100px;
+}
+
+section#pri h2#prev, section#pri h2#next{
+	position: absolute;
+	display: inline-block;
+}
+
+section#pri h2#prev{
+	left: 100px;
+	top: 20px;
+}
+
+section#pri h2#next{
+	right: 100px;
+	top: 20px;
+}
+
+section#pri h2 a{
+	text-decoration: none;
+	color: #D74983;
+}
+
+section#pri h2 a:hover{
+	color: black;
+}
+
+section#pri h2{
+	font-family: 'RansomNote', sans-serif;
+}
+
+section#pri ol{
+	list-style-position: inside;
+	text-align: center;
+	color: #D74983;
+}
+
+section#pri ol div{
+	display: inline-block;
+	height: 600px;
+	width: 300px;
+	margin: 5px;
+	left: calc((100% - 1300px)/2);
+	position: relative;
+	float: left;
+}
+
+section#pri ol div li{
+	font-family: 'RansomNote', sans-serif;
+}
+
+section#seg{
+	display: inline-block;
+	top: 700px;
+	height: 300px;
+}
+
+section#seg h2{
+	font-family: 'RansomNote', sans-serif;
+}
+
+section#seg div iframe{
+	box-shadow: 2px 2px 5px black;
+	border: 4px double black;
+}
+
+div#faixa{
+	background-color: #D74983;
+	position: absolute;
+	top: 1100px;
+	height: 50px;
+	width: 100%;
+	left: 0;
+}
+
+footer#rodape div{
+	position: absolute;
+	background-color: #D74983;
+	width: 100%;
+	height: 400px;
+	left: 0;
+	top: 1320px;
+}
+
+footer#rodape div table{
+	width: 100%;
+}
+
+footer#rodape div table tr#principais{
+	width: 15%;
+}
+
+footer#rodape div table tr#principais th{
+	font: 18pt 'RansomNote', sans-serif;
+	text-transform: lowercase;
+	text-align: center;
+	padding-top: 20px;
+}
+
+footer#rodape div table tr th a{
+	color: white;
+	text-decoration: none;
+}
+
+footer#rodape div tr th a:hover{
+	color: black;
+}
+
+footer#rodape div tr td{
+	font: 14pt 'Times New Roman', serif;
+	text-align: center;
+	width: 15%;
+	padding-top: 20px;
+	text-transform: lowercase;
+}
+
+footer#rodape div table tr td a{
+	color: black;
+	text-decoration: none;
+}
+
+footer#rodape div tr td a:hover{
+	color: white;
+}
+
+footer#rodape div tr td a.active{
+	color: white;
+}

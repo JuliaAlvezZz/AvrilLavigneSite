@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+body, html{
+	font-family: 'Cinzel', serif;
+}
+
+header{
+	background-color: #038C8C;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	z-index: 1000;
+	box-shadow: 2px 0px 5px black;
+	float: left;
+}
+
+header h1{
+	position: relative;
+	font-size: 35pt;
+	top: 15px;
+	left: 2%;
+	display: inline;
+	z-index: 1001;
+}
+
+header h1 a{
+	color: #191919;
+	text-decoration: none;
+}
+
+header nav#menu{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+header nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: relative;
+	width: 100%;
+	right: 2%;
+	top: 20px;
+	text-align: right;
+}
+
+header nav#menu ul li{
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+header nav#menu ul li a{
+	font-size: 18pt;
+	color: #191919;
+	text-decoration: none;
+}
+
+header nav#menu ul li a.active{
+	font-size: 18pt;
+	color: #B8D9D3;
+	text-decoration: none;
+}
+
+header nav#menu ul li a:hover:not(.active){
+	color: #B8D9D3;
+}
+
+img#fundo1{
+	position: fixed;
+	left: 0;
+	width: 100%;
+}
+
+img#fundo2{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 1000px;
+}
+
+img#fundo3{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 2920px;
+}
+
+section{
+	position: absolute;
+	left: 0;
+	height: 400px;
+	width: 100%;
+}
+
+section#pri{
+	top: 150px;
+}
+
+section#pri div{
+	height: 400px;
+	display: inline-block;
+	text-align: center;
+	width: 325px;
+	float: left;
+	position: relative;
+	left: calc((100% - 1300px)/2);
+	border-right: 1px ridge #011C40;
+}
+
+section h2{
+	text-align: center;
+	color: #191919;
+}
+
+section h1{
+	color: #191919;
+}
+
+section h2 a{
+	color: #191919;
+	text-decoration: none;
+}
+
+section h2 a:hover, section h3 a:hover{
+	color: #B8D9D3;
+	text-shadow: 2px 2px 5px black;
+}
+
+section#pri div img{
+	width: 80%;
+	opacity: 1;
+	position: relative;
+}
+
+section#pri div img.dif{
+	width: 50%;
+	border-radius: 100%;
+	transition: opacity 0.5s;
+	opacity: 1;
+}
+
+section#pri div img:hover{
+	transition: opacity 0.5s;
+	opacity: 0.8;
+}
+
+section h3{
+	color: #191919;
+	font-weight: bold;
+	text-align: center;
+}
+
+section h3 a{
+	color: #023859;
+	text-decoration: none;
+}
+
+section#seg{
+	top: 600px;
+	background-color: #023859;
+}
+
+section#seg h1, section#ter h1{
+	font-size: 30pt;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+section#seg div{
+	height: 250px;
+	display: inline-block;
+	text-align: center;
+	width: 325px;
+	float: left;
+	position: relative;
+	left: calc((100% - 1300px)/2);
+}
+
+section#seg a img{
+	position: relative;
+	width: 96px;
+	border-radius: 100%;
+	border: 3px solid #038C8C;
+	padding: 20px;
+}
+
+section#seg a img:hover{
+	border: 3px solid #B8D9D3;
+}
+
+section#seg a{
+	position: relative;
+	text-align: center;
+	font-size: 18pt;
+	color: #B8D9D3;
+	text-decoration: none;
+}
+
+section#seg a:hover{
+	text-shadow: 2px 2px 5px black;
+}
+
+section#ter{
+	height: 700px;
+	top: 1600px;
+	background-color: #023859;
+}
+
+section#ter h1 a{
+	color: #B8D9D3;
+	text-decoration: none;
+}
+
+section#ter h1 a:hover{
+	text-shadow: 2px 2px 5px black;
+}
+
+section#ter img{
+	position: relative;
+	top: -45px;
+	width: 800px;
+	left: calc((100% - 800px)/2);
+}
+
+section#qua{
+	display: inline-block;
+	top: 2320px;
+}
+
+section#qua div{
+	display: inline-block;
+	float: left;
+	width: 650px;
+	height: 500px;
+	margin: 0;
+	left: calc((100% - 1300px)/2);
+	position: relative;
+}
+
+section#qua iframe{
+	top: 20px;
+	position: relative;
+}
+
+div#faixa{
+	background-color: #011C40;
+	position: absolute;
+	top: 2920px;
+	height: 50px;
+	width: 100%;
+	left: 0;
+}
+
+footer#rodape div{
+	position: absolute;
+	background-color: #011C40;
+	width: 100%;
+	height: 400px;
+	left: 0;
+	top: 3090px;
+
+}
+
+footer#rodape div table{
+	width: 100%;
+}
+
+footer#rodape div table tr#principais{
+	width: 15%;
+
+
+}
+
+footer#rodape div table tr#principais th{
+	font: 18pt 'Cinzel', serif;
+	text-align: center;
+	padding-top: 20px;
+}
+
+footer#rodape div table tr th a{
+	color: #B8D9D3;
+	text-decoration: none;
+}
+
+footer#rodape div tr th a.active{
+	font-weight: bold;
+}
+
+footer#rodape div tr th a:hover{
+	text-shadow: 2px 2px 5px black;
+}
+
+footer#rodape div tr td{
+	font-weight: bold;
+	font: 14pt 'Cinzel', serif;
+	text-align: center;
+	width: 15%;
+	padding-top: 20px;
+}
+
+footer#rodape div table tr td a{
+	color: #B8D9D3;
+	text-decoration: none;
+}
+
+footer#rodape div tr td a:hover{
+	text-shadow: 2px 2px 5px black;
+}
+
+footer#rodape div table tr td a.active{
+	font-weight: bold;
+}
